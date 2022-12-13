@@ -1,0 +1,72 @@
+*, *::after, *::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 16px;
+}
+
+.display {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 10px 0 5px 0;
+}
+.display__h1 {
+  font-size: 24px;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: 60px 4fr 1fr 1fr 1fr 1fr;
+  background: #1651be;
+  padding: 20px;
+}
+.header .white {
+  background-color: #9abbee;
+  border: 1px solid #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.navbar {
+  border: 1px solid red;
+  display: grid;
+  grid-template-rows: repeat(11, 1fr);
+}
+.navbar__side {
+  border: 1px solid red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 0;
+}
+
+.flexbox {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  height: 100%;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  border: 1px solid red;
+}
+.content__grid {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  gap: 100px;
+  width: 1000px;
+  height: 400px;
+}
+.content__piece {
+  border: 1px solid red;
+  display: flex;
+  justify-content: center;
+}/*# sourceMappingURL=style.css.map */
