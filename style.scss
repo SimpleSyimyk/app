@@ -5,6 +5,15 @@
     font-family: 'Times New Roman', Times, serif;
     font-size: 16px;
 }
+
+::-webkit-scrollbar{
+    width: 0;
+    height: 0;
+}
+// работа с большим количеством грида
+.all__contents{
+    margin: 0 0 150px 0;
+}
 .display {
     display: flex;
     flex-direction: column;
@@ -67,3 +76,136 @@
         justify-content: center;
     }
 }
+
+// работа с гридом
+.gridtext{
+    font-size: 25px;
+    font-weight: 800;
+}
+.gridbox {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 150px);
+    gap: 40px;
+    margin: 5px;
+
+    &__item{
+        border: 1px solid #000;
+        padding: 10px;
+        color: white;
+        background: #aa1453;
+    }
+    .item1 {
+        grid-area: 1/2/1/4;
+    }
+
+    .item2 {
+        grid-area: 2/1/2/3;
+    }
+}
+
+// работа со страницей сайта
+.page {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-rows: 2fr 6fr 1fr;
+    height: 100vh;
+    gap: 40px;
+    padding: 50px;
+    color: #fff;
+    margin-bottom: 200px;
+    &__header {
+        grid-area: 1/1/1/4;
+        background: #191a2c;
+        font-size: 100px;
+        display: flex;
+        align-items: center;
+        color: #fff;
+        padding: 20px;
+        gap: 20px;
+    }
+    &__artbox {
+        grid-area: 2/1/2/1;
+        gap: 20px;
+        height: 100%;
+        border: 1px solid #000;
+    }
+    &__aticles {
+        background: #ac4444;
+        margin-bottom: 20px;
+    }
+    .hightext {
+        font-size: 50px;
+    }
+    &__text {
+    }
+    &__favbox {
+        grid-area: 2/2/2/2;
+        gap: 20px;
+        height: 100%;
+        border: 1px solid #000;
+    }
+    &__favorites {
+        background: #50ac90;
+        margin-bottom: 20px;
+    }
+    &__postbox {
+        gap: 20px;
+        grid-area: 2/3/2/3;
+        border: 1px solid #000;
+    }
+    &__posts {
+        background: rgb(78, 99, 156);
+        margin-bottom: 20px;
+    }
+    &__posts>ul{
+        margin-left: 20px;
+    }
+    &__footer {
+        gap: 2 0px;
+        grid-area: 3/2/3/4;
+        background: #191a2c;
+        color: white;
+        font-size: 40px;
+        padding: 20px;
+        display: flex;
+        align-items: center;
+    }
+    .padbox{
+        padding: 20px;
+    }
+}
+
+// раеще работа с гридом
+.griditem {
+    display: grid;
+    width: 680px;
+    height: 680px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+    border: 1px solid #000;
+    margin: 0 0 50px 15px;
+    &__element1 {
+        grid-area: 1/1/1/1;
+    }
+
+    &__element2 {
+        grid-area: 2/3/2/3;
+    }
+
+    &__element3 {
+        grid-area: 3/2/3/2;
+    }
+    .gridel{
+        border: 1px solid #000;
+        font-size: 30px;
+        background: #ecac21;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
