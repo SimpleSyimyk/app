@@ -137,8 +137,6 @@
     .hightext {
         font-size: 50px;
     }
-    &__text {
-    }
     &__favbox {
         grid-area: 2/2/2/2;
         gap: 20px;
@@ -209,3 +207,37 @@
     }
 }
 
+.gridcontainer {
+    display: grid;
+    grid-template-columns: 200px 1fr 200px;
+    grid-template-rows: 100px 500px 100px;
+    border: 1px solid #000;
+    margin: 5px;
+    &__item1 {
+        background: red;
+    }
+    
+    &__item2 {
+        background: orange;
+    }
+    
+    &__item3 {
+        background: green;
+    }
+    
+    &__item4 {
+        background: blue;
+    }
+    
+    &__item5 {
+        background: purple;
+    }
+    .gridelement{
+        padding: 10px;
+        color: #fff;
+        -webkit-text-stroke: 1px rgb(255, 255, 255);
+        -webkit-text-fill-color: transparent;
+        font-size: 45px;
+        font-weight: 900;
+    }
+}
